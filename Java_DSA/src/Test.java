@@ -2,22 +2,15 @@
 public class Test {
 
 	public static void main(String[] args) {
-		System.out.println(numberOfSteps(8));
+		int n = 5;
+		int originalN = n;
+        n = 2 * n;
+        for (int row = 0; row <= n; row++) {
+            for (int col = 0; col <= n; col++) {
+                int atEveryIndex = originalN - Math.min(Math.min(row, col), Math.min(n - row, n - col));
+                System.out.print(atEveryIndex + " ");
+            }
+            System.out.println();
+        }
 	}
-	
-	static int step = 0;
-    public static int numberOfSteps(int num) {
-        if(num == 0){
-        	return step;
-        }
-        if(num%2 == 0){
-            step++;
-            System.out.println(step);
-            return numberOfSteps(num/2);
-        }
-        else{
-            step++;
-            return numberOfSteps(num-1);
-        }
-    }
 }
