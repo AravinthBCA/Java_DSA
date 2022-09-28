@@ -4,7 +4,6 @@ public class Perfect_Square_Root {
 	public static void main(String[] args) {
 		int num = 2147395599;
 		System.out.println(checkSquare(num));
-		System.out.println('c' > 'a');
 	}
 
 	private static int checkSquare(int num) {

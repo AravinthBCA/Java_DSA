@@ -11,30 +11,6 @@ public class Distance_Betwen_Two_Arrays2 {
 		System.out.println(findTheDistanceValue(arr1,arr2,3));
 	}
 	
-	public static int findTheDistanceValue1(int[] arr1, int[] arr2, int d) {
-		Arrays.sort(arr2);
-        int count = 0;
-        for(int i=0; i<arr1.length; i++){
-            int start = 0, end = arr2.length-1; 
-            while(start < end){
-                int mid = start + (end-start) / 2;
-                if(Math.abs(arr1[i] - arr2[mid]) <= d){
-                	break;
-                }
-                else if(arr2[mid] < arr1[i]){
-                    start = mid+1;
-                }
-                else{
-                    end = mid-1;
-                }
-            }
-            if(start >= end){
-                count++;
-            }
-        }
-        return count;
-    }
-	
 	public static int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
         Arrays.sort(arr2);    
         int distance = 0;

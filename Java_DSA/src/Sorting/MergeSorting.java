@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MergeSorting {
 
 	public static void main(String[] args) {
-		int arr[] = {3,1,5,2,4,6};
+		int arr[] = {-2,3,-5};
 		mergeSorting(arr,0,arr.length);
 		System.out.println(Arrays.toString(arr));
 	}
