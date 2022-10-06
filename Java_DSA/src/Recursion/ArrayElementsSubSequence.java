@@ -10,7 +10,6 @@ public class ArrayElementsSubSequence {
 		for(ArrayList<Integer> list : ans) {
 			System.out.println(list.toString());
 		}
-		subSet(arr);
 	}
 	
 	public static ArrayList<ArrayList<Integer>> subSet(int arr[]){
