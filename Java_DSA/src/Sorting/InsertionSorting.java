@@ -8,9 +8,6 @@ public class InsertionSorting {
 		int arr[] = {5,3,1,2,4};
 		insertionSort(arr);
 		System.out.println(Arrays.toString(arr));
-		System.out.println((int)Math.cbrt(16));
-		System.out.println(Integer.MAX_VALUE);
-		System.out.println((int)Math.pow(2, 30));
 	}
 	
 	public static void insertionSort(int arr[]) {
