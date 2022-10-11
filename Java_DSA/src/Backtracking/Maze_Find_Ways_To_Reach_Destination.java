@@ -14,6 +14,7 @@ public class Maze_Find_Ways_To_Reach_Destination {
 		System.out.println("\nPaths : " + Arrays.toString(printingPathsDiagonally("",3,3).toArray()));
 	}
 	
+	// printing number of paths to reach destination.
 	public static int numberOfWays(int row, int column) {
 		if(row == 1 || column == 1)
 			return 1;
@@ -24,6 +25,7 @@ public class Maze_Find_Ways_To_Reach_Destination {
 		return left + right;
 	}
 	
+	// printing paths only UP and Down ways to reach destination.
 	public static List<String> printingPaths(String processed, int row, int column) {
 		if(row == 1 && column == 1) {
 			ArrayList<String> innerList = new ArrayList<>();
@@ -42,6 +44,7 @@ public class Maze_Find_Ways_To_Reach_Destination {
 		return outerList;
 	}
 	
+	// printing paths only UP, Down and Diagonal ways to reach destination.
 	public static List<String> printingPathsDiagonally(String processed, int row, int column) {
 		if(row == 1 && column == 1) {
 			ArrayList<String> innerList = new ArrayList<>();

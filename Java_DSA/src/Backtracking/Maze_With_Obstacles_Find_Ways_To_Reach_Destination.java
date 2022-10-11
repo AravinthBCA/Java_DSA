@@ -16,6 +16,7 @@ public class Maze_With_Obstacles_Find_Ways_To_Reach_Destination {
 		System.out.println("\nPaths : " + Arrays.toString(printingPathsAllDirectionWithMatrix(maze,"",0,0, arr, 1).toArray()));
 	}	
 	
+	// printing paths only UP and Down to reach destination.
 	public static List<String> printingPathsDownRight(boolean maze[][], String processed, int row, int column) {
 		if(maze[row][column]) {
 			if(row == 2 && column == 2) {
@@ -39,6 +40,7 @@ public class Maze_With_Obstacles_Find_Ways_To_Reach_Destination {
 		return outerList;
 	}
 	
+	// printing paths UP, Down, Left and Right ways to reach destination.
 	public static List<String> printingPathsAllDirection(boolean maze[][], String processed, int row, int column) {
 		if(maze[row][column]) {
 			if(row == 2 && column == 2) {
@@ -73,6 +75,7 @@ public class Maze_With_Obstacles_Find_Ways_To_Reach_Destination {
 		return outerList;
 	}
 	
+	// printing paths UP, Down, Left and Right to reach destination with Matrix result
 	public static List<String> printingPathsAllDirectionWithMatrix(boolean maze[][], String processed, int row, int column, int arr[][], int level) {
 		if(maze[row][column]) {
 			if(row == 2 && column == 2) {
